@@ -13,7 +13,7 @@ const Form=()=>{
       const formData = new FormData();
       formData.append('image', image); 
      try {
-      const response=await fetch("http://localhost:3000/api/post",{
+      const response=await fetch("https://multer-backend-neon.vercel.app/api/post",{
         method:"POST",
         body: formData,
       });

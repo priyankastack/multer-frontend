@@ -16,7 +16,7 @@ const ImageProvider=({children})=>{
   const ShowImg = async () => {
     setLoading(true);
   try {
-    const response = await fetch("http://localhost:3000/api/getimages", {
+    const response = await fetch("https://multer-backend-neon.vercel.app/api/getimages", {
       method: "GET",
     });
     const result = await response.json();
